@@ -1,46 +1,62 @@
 <div class="container">
-    <app-header></app-header>
-        <div class="header row">
-            <div class="col-lg-8">
-                <img src=""/>
-            </div>
-            <div class="col-lg-4">
-                <div class="">
-                    <ul>
-                        <li>
-                            <a [routerLink]="['https://www.facebook.com/Ingeniero005?ref=hl']">
-                                New Plataforma 1
-                            </a>
-                        </li>
-                        <li>
-                            <a [routerLink]="['https://www.facebook.com/Ingeniero005?ref=hl']">
-                                New Plataforma 2
-                            </a>
-                        </li>
-                        <li>
-                            <a [routerLink]="['https://www.facebook.com/Ingeniero005?ref=hl']">
-                                New Plataforma 3
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="video">
-                    <iframe width="350" height="230" src="https://www.youtube.com/embed/r4pRcq7PERw?controls=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    <div class="header row">
+        <div class="col-8">
+            <div class="single-post">
+                <div class="row d-md-flex align-items-center">
+                    <div class="col-md-6">
+                        <div class="post-thumb">
+                            <a href="blog-details.html"><img [src]="'assets/img/imfg3.jpg'" alt="post thumbnail"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="post-content">
+                            <h2 class="post-title"><a href="blog-details.html">Disrupt vero ea id fugiat income post ronic kitsch banksy.</a></h2>
+                            <p>The man credited with discovering sum roots is likely that sometime during the middle ages a typesetter scrambled part of cicero the finibus.</p>
+                            <div class="post-meta">
+                                <a href="blog-details.html">Read more</a>
+                                <span>22 December, 2017</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <p>Nueva Plataforma</p>
-                </div>
-                <div class="col-4">
-                    <p>Nueva Plataforma</p>
-                </div>
-                <div class="col-4">
-                    <p>Nueva Plataforma</p>                
-                </div>
+        <div class="col-lg-4">
+            <div class="">
+                <ul>
+                    <li>
+                        <a [routerLink]="['https://www.facebook.com/Ingeniero005?ref=hl']">
+                            New Plataforma 1
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['https://www.facebook.com/Ingeniero005?ref=hl']">
+                            New Plataforma 2
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['https://www.facebook.com/Ingeniero005?ref=hl']">
+                            New Plataforma 3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="video">
+                <iframe width="350" height="230" src="https://www.youtube.com/embed/r4pRcq7PERw?controls=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
             </div>
         </div>
-    <app-footer></app-footer>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <p>Nueva Plataforma</p>
+            </div>
+            <div class="col-4">
+                <p>Nueva Plataforma</p>
+            </div>
+            <div class="col-4">
+                <p>Nueva Plataforma</p>                
+            </div>
+        </div>
+    </div>
 </div>

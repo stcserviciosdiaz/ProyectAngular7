@@ -1,0 +1,84 @@
+.post-thumb {
+    position: relative;
+    margin-right: -58px;
+    a {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 0;
+            opacity: 0;
+            border-radius: 50%;
+            background: rgba(39, 76, 162, 0.67);
+            -webkit-transition: all 0.5s ease 0s;
+            -o-transition: all 0.5s ease 0s;
+            transition: all 0.5s ease 0s;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    }
+}
+.post-content {
+    background: #fff;
+    padding: 37px 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    position: relative;
+    padding: 29px 0px;
+    z-index: 1;
+    h2 {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 0px;
+    }
+    p {
+        color: #626a72;
+        line-height: 27px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: 0;
+        line-height: 28px;
+        margin: 0;
+    }
+    .post-meta {
+        margin-top: 15px;
+            a {
+                font-size: 14px;
+                font-weight: 600;
+                color: #012a8a;
+                letter-spacing: 0;
+                border-bottom: 1px solid #012a8a;
+                display: inline-block;
+                line-height: 15px;
+                margin-right: 24px;
+            }
+            span {
+                font-size: 14px;
+                color: #626a72;
+                display: inline-block;
+                letter-spacing: 0;
+            }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: -81px;
+        top: 0;
+        width: 153px;
+        height: 100%;
+        background: #fff;
+        border-radius: 9px;
+        transform: skew(-15deg);
+        z-index: -1;
+        box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.09);
+    }
+}
