@@ -82,3 +82,31 @@
         box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.09);
     }
 }
+.block-wallet {
+    display:inline-flex;
+    padding:2rem 0;
+    width:100%;
+    .name {
+        text-align:center;
+        opacity:0.5;
+        padding-top:1rem;
+        font-weight:300;
+        font-size:1.4rem;
+    }
+    .logo {
+        height:50px;
+        position:relative;
+    }
+    img {
+        max-height: 100%;  
+        max-width: 100%; 
+        width: auto;
+        height: auto;
+        position: absolute;  
+        top: 0;  
+        bottom: 0;  
+        left: 0;  
+        right: 0;  
+        margin: auto;
+    }
+} 
