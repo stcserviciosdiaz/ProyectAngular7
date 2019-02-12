@@ -9,10 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { UserComponent } from './user/user.component';
 import { LoginComponent } from './user/login/login.component';
 import { RegisterComponent } from './user/register/register.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, FooterComponent, HeaderComponent, UserComponent, LoginComponent, RegisterComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
