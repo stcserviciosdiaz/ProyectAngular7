@@ -1,8 +1,9 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
-import { RegisterComponent } from "./user/register/register.component";
-import { LoginComponent } from "./user/login/login.component";
+import { RegisterComponent } from "./register/register.component";
+import { LoginComponent } from "./login/login.component";
+import { AuthGuard } from "./_guards";
 
 const routes: Routes = [
   // {
@@ -13,7 +14,7 @@ const routes: Routes = [
   // }
   {
     path: "",
-    component: HomeComponent
+    component: HomeComponent, canActivate: [AuthGuard]
   },
   {
     path: 'register',
@@ -22,7 +23,8 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
-  }
+  },
+  { path: '**', redirectTo: '' }
   // { path: '',   redirectTo: '/register', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }
 ];
@@ -32,4 +34,5 @@ const routes: Routes = [
   //imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
+//export const routing = RouterModule.forRoot(routes);
 export class AppRoutingModule {}
