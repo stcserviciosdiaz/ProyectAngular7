@@ -13,3 +13,21 @@
     	}
     }
 }
+.sub-nav{
+	.redes{
+		ol{
+			list-style: none;
+			li:nth-child(1){
+				margin-left: 0;
+			}
+			li{
+				margin-left: 15px;
+			}
+		}
+	}
+	.telephone{
+		p{
+			margin-bottom: 0;
+		}
+	}
+}

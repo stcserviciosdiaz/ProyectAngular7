@@ -3,6 +3,93 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    .single-bit{
+        ul{
+            display: grid;
+            margin-left: 0;
+            padding-left: 0;
+            li{
+                margin-bottom: 15px;
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    img{
+                        margin-right: 15px;
+                        float: left;
+                        width: 30px;
+                       // widows: 35px;
+                    }
+                    p{
+                        color: #fff;
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    .single-post{
+        .post-content{
+            background: #fff;
+            padding: 37px 0px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            position: relative;
+            padding: 29px 0px;
+            z-index: 1;
+            h2{
+                a{
+                    text-decoration: none;
+                    font-size: 22px;
+                    line-height: 24px;
+                    margin-bottom: 0px;
+                    color: #572c13;
+                }
+            }
+            p{
+                color: #626a72;
+                line-height: 27px;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 14px;
+                font-weight: normal;
+                letter-spacing: 0;
+                line-height: 28px;
+                margin: 0;
+            }
+            .post-meta {
+                margin-top: 15px;
+                    a {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #572c13;
+                        letter-spacing: 0;
+                        border-bottom: 1px solid #012a8a;
+                        display: inline-block;
+                        line-height: 15px;
+                        margin-right: 24px;
+                    }
+                    span {
+                        font-size: 14px;
+                        color: #626a72;
+                        display: inline-block;
+                        letter-spacing: 0;
+                    }
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                left: -81px;
+                top: 0;
+                width: 153px;
+                height: 100%;
+                background: #fff;
+                border-radius: 9px;
+                transform: skew(-15deg);
+                z-index: -1;
+                box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.09);
+            }
+        }
+    }
 }
 .bg-coin{
     background-color: #f2a0231a;
@@ -17,16 +104,22 @@
         height: 100px;
         text-align: center;
         margin-left: auto;
-        margin-right: auto;
-        color: white;
-        font-size: 30px;
-        font-weight: 300;
-        display: -ms-flexbox;
+        margin-right: auto;        
         display: flex;
-        -ms-flex-align: center;
         align-items: center;
-        -ms-flex-pack: center;
-        justify-content: center;        
+        justify-content: center;
+        opacity: 0.7;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+        .center-faq{
+            p{
+                color: #fff;
+                font-size: 16px;
+            }
+            span{
+                color: #fff;
+                font-size: 18px;
+            }
+        }   
     }
 }
 .post-thumb {
@@ -57,62 +150,7 @@
         }
     }
 }
-.post-content {
-    background: #fff;
-    padding: 37px 0px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    position: relative;
-    padding: 29px 0px;
-    z-index: 1;
-    h2 {
-        font-size: 22px;
-        line-height: 24px;
-        margin-bottom: 0px;
-    }
-    p {
-        color: #626a72;
-        line-height: 27px;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        font-weight: normal;
-        letter-spacing: 0;
-        line-height: 28px;
-        margin: 0;
-    }
-    .post-meta {
-        margin-top: 15px;
-            a {
-                font-size: 14px;
-                font-weight: 600;
-                color: #012a8a;
-                letter-spacing: 0;
-                border-bottom: 1px solid #012a8a;
-                display: inline-block;
-                line-height: 15px;
-                margin-right: 24px;
-            }
-            span {
-                font-size: 14px;
-                color: #626a72;
-                display: inline-block;
-                letter-spacing: 0;
-            }
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        left: -81px;
-        top: 0;
-        width: 153px;
-        height: 100%;
-        background: #fff;
-        border-radius: 9px;
-        transform: skew(-15deg);
-        z-index: -1;
-        box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.09);
-    }
-}
+
 .block-wallet {
     display:inline-flex;
     padding:2rem 0;
