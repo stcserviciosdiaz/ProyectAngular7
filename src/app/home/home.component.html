@@ -56,7 +56,9 @@
                       </ul>
                   </div>
                   <div class="video">
-                      <iframe width="350" height="230" src="https://www.youtube.com/embed/r4pRcq7PERw?controls=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                      <iframe width="560" height="315" style="width: 100%;
+                      max-height: 210px;
+                      position: absolute;" src="https://www.youtube.com/embed/pwz1v4vSr1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   </div>
               </div>
           </div>
@@ -189,13 +191,13 @@
           </div>
         </div>
         <div class="container pt-3">
-          <div class="card" *ngFor="let card of cardinfor">
+          <div class="card" *ngFor="let card of cardinfor; let i=index">
               <div class="card-body">
                 <div class="col" (click)="botbitcoin(index)">
                     <h5 class="panel-title">
                       <a style="color:black">{{ card.title }}</a>
-                      <i class="fa fa-window-maximize float-right"></i>
-                      <i class="fa fa-window-minimize float-right"></i>
+                      <i class="fa fa-window-maximize float-right" *ngIf="faulscoin === index"></i>
+                      <i class="fa fa-window-minimize float-right" *ngIf="faulscoin !== index"></i>
                     </h5>
                 </div>
                 <div class="col">

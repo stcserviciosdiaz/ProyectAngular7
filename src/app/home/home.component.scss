@@ -95,12 +95,13 @@
     background-color: #f2a0231a;
 }
 .bg-blog{
-    background-color: #f8eba7;
+    background-color: #f0ba27;
 }
 .bg-faq{
     .header-fag{
         background-image: url("/assets/img/call-to-action.jpg");
-        background-repeat: repeat-x;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 100px;
         text-align: center;
         margin-left: auto;
