@@ -4,7 +4,7 @@ import { HomeComponent } from "./home/home.component";
 import { RegisterComponent } from "./register/register.component";
 import { LoginComponent } from "./login/login.component";
 import { DashboardComponent } from "./dashboard/dashboard.component"
-//import { AuthGuard } from "./_guards";
+import { AuthGuard } from "./_guards";
 
 const routes: Routes = [
   // {
@@ -13,31 +13,19 @@ const routes: Routes = [
   //     { path: 'register', component: RegisterComponent }
   //   ]
   // }
-  {
-    path: "",
-    component: HomeComponent //canActivate: [AuthGuard]
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'dashboard',
-    component: DashboardComponent
-  },
-  { path: '**', redirectTo: '' }
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent  },
+  { path: 'register', component: RegisterComponent  },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
+  //{ path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
   // { path: '',   redirectTo: '/register', pathMatch: 'full' },
   // { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  //imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
+  //imports: [RouterModule.forChild(routes)],
 })
 //export const routing = RouterModule.forRoot(routes);
 export class AppRoutingModule {}

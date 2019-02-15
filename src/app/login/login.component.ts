@@ -44,6 +44,7 @@ export class LoginComponent implements OnInit {
   get f() { return this.loginForm.controls; }
   
   login (){
+    console.log('paso')
     this.submitted = true
 
     if (this.loginForm.invalid){
@@ -62,6 +63,5 @@ export class LoginComponent implements OnInit {
         this.loading = false
       }
     )
-
   }
 }
