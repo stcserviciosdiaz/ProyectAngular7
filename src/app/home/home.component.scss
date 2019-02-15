@@ -63,7 +63,7 @@
                         font-weight: 600;
                         color: #572c13;
                         letter-spacing: 0;
-                        border-bottom: 1px solid #012a8a;
+                        text-decoration: none;
                         display: inline-block;
                         line-height: 15px;
                         margin-right: 24px;
@@ -96,6 +96,14 @@
 }
 .bg-blog{
     background-color: #f0ba27;
+    .card-img-overlay{
+        img: hover{
+            //border: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
 }
 .bg-faq{
     .header-fag{
@@ -121,6 +129,9 @@
                 font-size: 18px;
             }
         }   
+    }
+    .cp{
+        cursor: pointer;
     }
 }
 .post-thumb {
@@ -151,7 +162,6 @@
         }
     }
 }
-
 .block-wallet {
     display:inline-flex;
     padding:2rem 0;

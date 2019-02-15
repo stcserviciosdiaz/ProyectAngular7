@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { isNgTemplate } from '@angular/compiler';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  faulscoin = false
+  expression = false
 
   cardinfor = [
     {
@@ -33,13 +34,19 @@ export class HomeComponent implements OnInit {
   }
 
   botbitcoin(index){
-    console.log('cagada')
-    console.log('eeee', this.cardinfor[index].id)
-    if(this.cardinfor == index){
-    }
-    
-    
+    this.expression = false
+    let words = this.cardinfor
+      words.forEach(item => {
+        if(item[index].id = 1){
+          console.log('1', item.id)
+          //this.expression = true
+        }else if(item[index].id = 2){
+          console.log('2', item.id)
+          //this.expression = false
+        }else if(item.id = 3){
+          console.log('3333', item.id)
+          //return
+        }
+      })
   }
-
-  
 }
