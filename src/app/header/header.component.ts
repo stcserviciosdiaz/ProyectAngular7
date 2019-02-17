@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 import { Router } from '@angular/router';
 import { AuthenticationService } from '../_services';
 
+import { Subscription } from 'rxjs';
 import { User } from '../_models';
 
 @Component({
@@ -12,7 +13,9 @@ import { User } from '../_models';
 })
 
 export class HeaderComponent implements OnInit {
+  currentUserSubscription: Subscription;
   currentUser: User;
+  users: User[] = []
 
   constructor(
     private router: Router,
@@ -23,6 +26,10 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  ngOnDestroy() {
+    this.currentUserSubscription.unsubscribe();
+  } 
 
   logout() {
     this.authenticationService.logout();

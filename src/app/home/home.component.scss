@@ -92,7 +92,9 @@
     }
 }
 .bg-coin{
-    background-color: #f2a0231a;
+    background-image: url(/assets/img/bg-coin.png);
+    background-position-x: right;
+    background-repeat: no-repeat;
 }
 .bg-blog{
     background-color: #f0ba27;
@@ -106,33 +108,26 @@
     }
 }
 .bg-faq{
+    background-image: url(/assets/img/call-to-action.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     .header-fag{
-        background-image: url("/assets/img/call-to-action.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0.7;
-        filter: alpha(opacity=50); /* For IE8 and earlier */
-        .center-faq{
+        padding: 60px 0;
+        .inform{
             p{
-                color: #fff;
-                font-size: 16px;
+                background-color: #f0ba27;
+                text-align: center;
+                padding: 5px 0;
+                border-radius: 2px;
             }
-            span{
-                color: #fff;
-                font-size: 18px;
-            }
-        }   
+        }
     }
-    .cp{
-        cursor: pointer;
-    }
+}
+.acord{
+    position: absolute;
+        transform: translateY(-250px);
+    bottom: 0px;
 }
 .post-thumb {
     position: relative;

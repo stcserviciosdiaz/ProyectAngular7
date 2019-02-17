@@ -12,6 +12,14 @@
                     twitter
                   </li>
                   <li>
+                    <i class="fa fa-instagram"></i>
+                    instagram
+                  </li>
+                  <li>
+                    <i class="fa fa-pinterest"></i>
+                    pinterest
+                  </li>
+                  <li>
                     <i class="fa fa-linkedin"></i>
                     linkeding
                   </li>
@@ -21,7 +29,7 @@
                   </li>
                 </ol>
             </div>
-            <div class="telephone col d-flex justify-content-end mt-2 mb-2">
+            <div class="telephone col-4 d-flex justify-content-end mt-2 mb-2">
                 <p class="mr-3">
                   <i class="fa fa-phone"></i> 
                   +00 (58) 456 58 78
@@ -35,7 +43,7 @@
   </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand mr-0" href="#"><img [src]="'assets/img/logoBTRC.png'" height="55px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -73,7 +81,7 @@
     </ul>
     <ul class="navbar-nav" *ngIf="currentUser">
       <li class="nav-item">
-        <a class="nav-link fa fa-user"> Nombre</a>
+        <a class="nav-link fa fa-user"> nombre is {{username}}</a>
       </li>
       <li class="nav-item" (click)="logout()">
         <a class="nav-link fa fa-close"> Logout</a>

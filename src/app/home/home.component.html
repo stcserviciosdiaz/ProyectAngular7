@@ -114,7 +114,7 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <div class="card bg-dark text-white">
-                          <img class="card-img img-fluid" [src]="'assets/img/image-1.jpg'" alt="" style="min-height: 306px;">
+                          <img class="card-img img-fluid" [src]="'assets/img/call-to-action.jpg'" alt="" style="min-height: 306px;">
                           <div class="card-img-overlay d-flex linkfeat">
                             <a href="" class="align-self-end">
                               <span class="badge text-light">Ekspor</span> 
@@ -130,7 +130,7 @@
                   <div class="row">
                       <div class="col-6 pb-2 mg-1	">
                           <div class="card bg-dark text-white">
-                          <img class="card-img img-fluid" src="http://admin.makro.id/media/post_img_sm/bi-atur-standarisasi-qr-code-1529952479.jpg" alt="">
+                          <img class="card-img img-fluid" [src]="'assets/img/bitcoindinero.jpg'" alt="" style="max-height: 149px;">
                             <div class="card-img-overlay d-flex">
                               <a href="http://makro.id/bi-atur-standarisasi-qr-code" class="align-self-end">
                                 <span class="badge text-light">Finansial</span> 
@@ -141,7 +141,7 @@
                       </div>
                       <div class="col-6 pb-2 mg-2	">
                           <div class="card bg-dark text-white">
-                            <img class="card-img img-fluid" src="http://admin.makro.id/media/post_img_sm/ptsp-bp-batam-masuk-10-terbaik-di-indonesia-1531400445.jpeg" alt="">
+                            <img class="card-img img-fluid" [src]="'assets/img/normal.jpg'" alt="" style="max-height: 149px;">
                             <div class="card-img-overlay d-flex">
                               <a href="http://makro.id/ptsp-bp-batam-masuk-10-terbaik-di-indonesia" class="align-self-end">
                                 <span class="badge text-light">Industri</span> 
@@ -152,7 +152,7 @@
                       </div>
                       <div class="col-6 pb-2 mg-3	">
                           <div class="card bg-dark text-white">
-                            <img class="card-img img-fluid" src="http://admin.makro.id/media/post_img_sm/review-gsp-amerika-ingin-perdagangan-yang-adil-dan-saling-menguntungkan-1531307731.jpg" alt="">
+                            <img class="card-img img-fluid" [src]="'assets/img/monedabtc.jpg'" alt="" style="max-height: 149px;">
                             <div class="card-img-overlay d-flex">
                               <a href="http://makro.id/review-gsp-amerika-ingin-perdagangan-saling-menguntungkan" class="align-self-end">
                                 <span class="badge text-light">Ekspor</span> 
@@ -163,7 +163,7 @@
                       </div>
                       <div class="col-6 pb-2 mg-4	">
                           <div class="card bg-dark text-white">
-                            <img class="card-img img-fluid" src="http://admin.makro.id/media/post_img_sm/dpr-setujui-penambahan-anggaran-bp-batam-rp565-miliar-1531258457.jpeg" alt="">
+                            <img class="card-img img-fluid" [src]="'assets/img/img3.jpg'" alt="" style="max-height: 149px;">
                             <div class="card-img-overlay d-flex">
                               <a href="http://makro.id/dpr-setujui-penambahan-anggaran-bp-batam-rp565-miliar" class="align-self-end">
                                 <span class="badge text-light">Pertumbuhan Ekonomi</span> 
@@ -178,30 +178,26 @@
       </div>
     </div>
     <div class="bg-faq">
-        <div class="header-fag">
-          <div class="center-faq">
-            <span>Empieza a operar hoy con Bitcoin y otras criptomonedas</span>
-            <p>¡Abre una cuenta gratuita durante 30 días y empieza a operar con Bitcoin!</p>
-          </div>
-        </div>
-        <div class="container pt-3">
-          <div class="card" *ngFor="let card of cardinfor; let i=index">
-              <div class="card-body">
-                <div class="col cp" (click)="botbitcoin(index == i)">
-                    <h5 class="panel-title">
-                      <a style="color:black">{{ card.title }}</a>
-                      <i class="fa fa-window-maximize float-right" *ngIf="!expression"></i>
-                      <i class="fa fa-window-minimize float-right" *ngIf="expression"></i>
-                    </h5>
-                </div>
-                <div class="col" *ngIf="expression">
-                  <p>{{ card.description }} </p>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-12 text-left margin-top-small pt-3 pb-3">
-            <span>Have more questions?</span>&nbsp;<a href="https://www.coinmama.com/faq" style="cursor: pointer;">Visit our FAQ</a>
+        <div class="header-fag container">
+          <div class="col d-flex">
+            <div class="col center-faq text-light">
+              <span>METUS AUGUE PORTTITOR SED</span>
+              <p class="fs-12">¡LECTU VITAE RUTRUMAUCTOR LECTUS PELLENTESQUE ID PULVINAR VELIT AT PORTA LEO!</p>
+            </div>
+            <div class="col-4 inform text-light">
+              <p>
+                MORE INFORMATION
+                <i class="fa fa-arrow"></i>
+              </p>
+            </div>
           </div>
         </div>
     </div>
+    <!-- Start of adf.ly banner code -->
+    <div class="acord">
+      <a href="https://join-adf.ly/12391375">
+        <img border="0" src="https://cdn.adf.ly/images/banners/adfly.160x600.4.gif" width="160" height="600" title="AdF.ly - acorta links y gana dinero!" />
+      </a>
+    </div>
+    <!-- End of adf.ly banner code -->
 </div>

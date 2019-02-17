@@ -1,3 +1,40 @@
 footer{
 	background-color: #481a09 !important;
+	.list-group{
+		border-color: transparent;
+    	background-color: transparent;
+	}
+	.WhatsAppimg{
+		position: fixed;
+    	bottom: 0;
+    	a{
+    		text-decoration: none;
+			img{
+				float: left;
+				width: 100px;
+			}
+			.pard-pasth{
+				p{
+				  animation-name: parpadeo;
+				  animation-duration: 1s;
+				  animation-timing-function: linear;
+				  animation-iteration-count: infinite;
+
+				  -webkit-animation-name:parpadeo;
+				  -webkit-animation-duration: 1s;
+				  -webkit-animation-timing-function: linear;
+				  -webkit-animation-iteration-count: infinite;
+
+				    margin-bottom: 0px;
+    				margin-top: 15px;
+    				color: #f0ba27;
+				}
+			}
+    	}
+	}
+	.politic{
+		separat{
+			border-top: 1px solid rgba(255, 255, 255, 0.06);
+		}
+	}
 }

@@ -38,13 +38,17 @@ export class LoginComponent implements OnInit {
     });
 
     // get return url from route parameters or default to '/'
-    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+    this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/dashboard';
   }
 
   get f() { return this.loginForm.controls; }
+
+  // redirect = function(){
+  //   $window.location.href = "/"
+  // }
   
   login (){
-    console.log('paso')
+    //console.log('paso')
     this.submitted = true
 
     if (this.loginForm.invalid){
@@ -56,7 +60,7 @@ export class LoginComponent implements OnInit {
     .pipe(first())
     .subscribe(
       data => {
-        this.router.navigate([this.returnUrl])
+        this.router.navigate([this.returnUrl]) 
       },
       error => {
         this.alertService.error(error)
