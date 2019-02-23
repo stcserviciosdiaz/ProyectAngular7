@@ -13,6 +13,7 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import { JwtInterceptor, ErrorInterceptor, fakeBackendProvider } from "./_helpers";
 import { AlertComponent } from "./_components/alert.component";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './_components/dashboard/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AlertComponent,
     RegisterComponent,
     DashboardComponent,
+    ProfileComponent,
   ],
   exports:[],
   imports: [

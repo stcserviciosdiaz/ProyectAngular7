@@ -37,4 +37,9 @@ export class DashboardComponent implements OnInit, OnDestroy {
       });
   }
 
+  deleteUser (){
+    alert('Pos los momentos no podemos elimiar data¡')
+  }
+
+
 }

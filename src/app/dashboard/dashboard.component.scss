@@ -1,0 +1,26 @@
+.dashboard-sidebar{
+    background: #fff;
+    box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    transition: .05s ease-in;
+    z-index: 1001;
+    overflow-y: auto;
+    ul.nav{
+    	li{
+    		a{
+    			padding: 15px 35px 15px 20px;
+    			display: block;
+    		}
+    	}
+    }
+}
+.dashboard-wrapper{
+    min-height: 568px;
+    background: #edf1f5;
+    width: 100%;
+    .white-box {
+	    background: #fff;
+	    padding: 25px;
+	    margin-bottom: 30px;
+	}
+}
